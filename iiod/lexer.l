@@ -25,7 +25,7 @@
 
 %option noyywrap reentrant bison-bridge nounistd nounput noinput
 
-WORD (([[:alpha:]]+,)|(iio:))?(-|_|\.|[[:alnum:]])+
+WORD (([[:alpha:]]+,)|(iio:))?(-|_|\.|\/|[[:alnum:]])+
 
 %s WANT_DEVICE
 %s WANT_CHN_OR_ATTR
